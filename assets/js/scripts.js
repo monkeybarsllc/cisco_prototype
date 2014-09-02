@@ -163,6 +163,50 @@
 		map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 	}
 				
-	google.maps.event.addDomListener(window, 'load', initialize); 
+	google.maps.event.addDomListener(window, 'load', initialize);
 	
 })();
+
+var formApp = angular.module('HackathonReg', []);
+
+formApp.controller('RegFormCtrl', ['$http', '$scope', function ($http, $scope) {
+
+  $scope.newRegistration = {
+    event_id: 1,
+    responses: [
+      {
+        question_id: 2
+      },
+      {
+        question_id: 3
+      }
+    ]
+  };
+
+  $scope.submitRegistration = function() {
+    $http(
+      {
+        method: 'POST',
+        url: 'http://blooming-falls-6435.herokuapp.com/api/events/register',
+        headers: {
+          'Authorization': 'Token token=monkeybars'
+        },
+        data: $scope.newRegistration
+      }
+    ).success(
+      $scope.newRegistration = {
+        event_id: 1,
+        responses: [
+          {
+            question_id: 2
+          },
+          {
+            question_id: 3
+          }
+        ]
+      }
+    )
+  };
+
+
+}]);
