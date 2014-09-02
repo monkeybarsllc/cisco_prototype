@@ -1,6 +1,6 @@
 <?php
 $to = "office@example.com";
-$subject = "Signup from Ventcamp";
+$subject = "Signup for Cisco Internet of Things Hackathon";
 $newsletter = array(true => 'Yes!', 0 => 'No please');
 $message = "Ticket type: " . $_POST['ticket'];
 $message .= "<br/>Fullname: " . $_POST['fullname'];
