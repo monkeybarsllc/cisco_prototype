@@ -187,9 +187,9 @@ formApp.controller('RegFormCtrl', ['$http', '$scope', function ($http, $scope) {
     $http(
       {
         method: 'POST',
-        url: 'http://blooming-falls-6435.herokuapp.com/api/events/register',
+        url: 'http://projecthacktool.com/api/events/register',
         headers: {
-          'Authorization': 'Token token=monkeybars'
+          'Authorization': 'Token token=4090ec6c153d8c9ba06ad2c1719040b1'
         },
         data: $scope.newRegistration
       }
