@@ -171,6 +171,8 @@ var formApp = angular.module('HackathonReg', []);
 
 formApp.controller('RegFormCtrl', ['$http', '$scope', function ($http, $scope) {
 
+  $scope.registered = false;
+
   $scope.newRegistration = {
     event_id: 1,
     responses: [
@@ -194,6 +196,7 @@ formApp.controller('RegFormCtrl', ['$http', '$scope', function ($http, $scope) {
         data: $scope.newRegistration
       }
     ).success(
+      $scope.registered = true,
       $scope.newRegistration = {
         event_id: 1,
         responses: [
