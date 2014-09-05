@@ -69,13 +69,13 @@
 						<br/>
 					</div>
 					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-						<form class="form form-register" novalidate="novalidate">
+						<form class="form form-register" novalidate="novalidate" name="regForm">
 							<div class="form-group">
 								<label for="ticket" class="col-sm-3 col-xs-12 control-label">Skill type</label>
 								<div class="col-sm-9 col-xs-12">
-									<select class="form-control required" name="ticket" id="ticket" placeholder="Select your ticket type" ng-model="newRegistration.responses[0].text">
+									<select class="form-control required" name="ticket" id="ticket" placeholder="Select your ticket type" ng-model="newRegistration.responses[0].text" required>
 										<option value="">-- Choose skill type --</option>
-                    <option value="Designer">Dsigner</option>
+                    <option value="Designer">Designer</option>
 										<option value="Back-end Developer">Back-end Developer</option>
 										<option value="Front-end Developer" selected>Front-end Developer <!--<span class="highlight">(best value)</span>--></option>
 									</select>
@@ -84,19 +84,19 @@
 							<div class="form-group">
 								<label for="fullname" class="col-sm-3 col-xs-12 control-label">Full name</label>
 								<div class="col-sm-9 col-xs-12">
-									<input type="text" class="form-control required" name="fullname" id="fullname" placeholder="Name Surname" ng-model="newRegistration.name">
+									<input type="text" class="form-control required" name="fullname" id="fullname" placeholder="Name Surname" ng-model="newRegistration.name" required />
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="company" class="col-sm-3 col-xs-12 control-label">Company</label>
 								<div class="col-sm-9 col-xs-12">
-									<input type="text" class="form-control" name="company" id="company" placeholder="Your Company" ng-model="newRegistration.responses[1].text">
+									<input type="text" class="form-control" name="company" id="company" placeholder="Your Company" ng-model="newRegistration.responses[1].text" required />
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="email" class="col-sm-3 col-xs-12 control-label">Email</label>
 								<div class="col-sm-9 col-xs-12">
-									<input type="email" class="form-control required email" name="email" id="email" placeholder="Email" ng-model="newRegistration.email">
+									<input type="email" class="form-control required email" name="email" id="email" placeholder="Email" ng-model="newRegistration.email" required />
 								</div>
 							</div>
 							<div class="form-group">
@@ -108,7 +108,7 @@
 									</div>
 								</div>
 							</div>
-							<button class="btn btn-primary btn-sm btn-block" ng-click="submitRegistration()">Get started</button>
+							<button class="btn btn-primary btn-sm btn-block" ng-disabled="regForm.$invalid" ng-click="submitRegistration()">Get started</button>
 						</form>
 						
 						<p class="agree-text center">By clicking you agree to our Terms of Service, Privacy Policy.<br>
