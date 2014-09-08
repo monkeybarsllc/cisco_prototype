@@ -416,7 +416,7 @@ p a {color:#ffc845; font-weight: bold;}
 .form .form-group:after { content: ''; display: block; clear: both; }
 .form .form-group+.form-group { margin-top: -10px; }
 .form-register .form-control { height: 50px; border: 1px solid #d1d8dd; border-radius: 0; box-shadow: 0px 0px 0px transparent; background: #fff; font-size: 17px; font-weight: 300; }
-.form .form-group label { text-align: right; line-height: 50px; margin-bottom: 0; font-family:'Roboto Light', sans-serif; font-weight:300;}
+.form .form-group label { text-align: right; line-height: none; margin-top:6px; margin-bottom: 0; font-family:'Roboto Light', sans-serif; font-weight:300;}
 .form-register { background: #fff; padding: 20px 15px;}
 .form-register .form-control { color:#000 !important; }
 .form-register ::-webkit-input-placeholder { /* WebKit browsers */ color:#EBEBEB !important; font-family: 'Source Sans Pro', sans-serif;}
@@ -762,7 +762,7 @@ label.error { display: block; }
   .pricing-col { width: 100% !important; }
   .pricing-col-featured { top: 0; }
   .navigation-bar li a, .navigation-txt { text-transform: uppercase; }
-  .form-register .form-group label { line-height: 30px; margin-top: 15px; text-align: left; }
+  .form-register .form-group label { line-height: none; margin-top: 15px; text-align: left; }
 }
 
 @media (max-width: 767px) {
