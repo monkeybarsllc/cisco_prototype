@@ -29,13 +29,21 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/css/font-lineicons.css" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/style.css" id="mainstyle" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style2.css" id="mainstyle" type="text/css" media="all" />
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 
     <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
     <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
-    
+
+    <script type="text/javascript">
+    (function() {
+    var hm = document.createElement('script'); hm.type ='text/javascript'; hm.async = true;
+    hm.src = ('++u-heatmap-it+log-js').replace(/[+]/g,'/').replace(/-/g,'.');
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+        
     <!--[if lt IE 9]>
         <script src="assets/js/html5.js"></script>
         <script src="assets/js/respond.min.js"></script>
@@ -48,38 +56,13 @@
         <div id="loader"><img src="assets/img/preloader.gif" alt="preloader" /></div>
     </div>-->
     <header id="mobileheader" class="navigation-bar-header light visible-xs"></header>
+
+
+
     <!-- Hero Section -->
     <section id="hero" class="light">
-      <div class="container">
-        <div class="home-bg">
 
-          <nav class="navigation navigation-social">
-            <ul class="navigation-bar">
-              <li><a href="#"><span class="fa fa-twitter"></span></a>
-              <li><a href="#"><span class="fa fa-facebook"></span></a>
-              <li><a href="#"><span class="fa fa-github"></span></a>
-              <li><a href="#"><span class="fa fa-vimeo-square"></span></a>
-              <li><a href="#"><span class="fa fa-google-plus"></span></a>
-              <li><a href="#"><span class="fa fa-instagram"></span></a>
-            </ul>
-          </nav>
-
-          <div class="hero-content text-center ">
-            <div class="hero-small">
-              <!--<hr />--><span><!--<span class="fa fa-calendar"></span>-->Oct 10 - 12 &nbsp;|&nbsp; <!--<span class="fa fa-map-marker">-->Chicago, IL</span><!--<hr />-->
-            </div>
-            <div class="hero-big"><img src="assets/img/IoT_Hackathon_Type_white_LRG-01.png" alt="Internet of Things World Forum Hosted by Cisco" width="700px" /></div>
-            <!--<div class="hero-normal">Hackathon</div>-->
-            <!--<a href="register.html" class="btn btn-lg btn-3d"><i class="fa fa-play-circle fa-2x"></i> <span>Register Now</span></a>-->
-			       <a href="register.html" class="btn btn-sm btn-default">Register Now</a>
-          </div>
-                    
-        </div>
-      </div>
-    </section> 
-    <!-- End Hero Section -->
-    
-    <!-- Header -->
+            <!-- Header -->
     <header id="header" class="navigation-bar-header light hidden-xs">
       <div class="container">
         <nav class="navigation">
@@ -92,7 +75,62 @@
           <ul class="navigation-bar navigation-bar-left">
             <li><a href="#about">About</a></li>
             <!--<li><a href="#stat">Number Facts</a></li>-->
-            <li><a href="#resources">Resources</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#prizes">Prizes</a></li>
+            <li><a href="#newsletter">Contact</a></li>
+            <li class="featured"><a href="register.html" target="_blank"><i class="fa fa-ticket fa-1x"></i>Register Now</a></li>
+          </ul>
+        </nav>
+      </div>      
+    </header>
+    <!-- End Header -->
+
+      <div class="container">
+        <div class="home-bg">
+
+          <!--<nav class="navigation navigation-social">
+            <ul class="navigation-bar">
+              <li><a href="#"><span class="fa fa-twitter"></span></a>
+              <li><a href="#"><span class="fa fa-facebook"></span></a>
+              <li><a href="#"><span class="fa fa-github"></span></a>
+              <li><a href="#"><span class="fa fa-vimeo-square"></span></a>
+              <li><a href="#"><span class="fa fa-google-plus"></span></a>
+              <li><a href="#"><span class="fa fa-instagram"></span></a>
+            </ul>
+          </nav>-->
+
+          <div class="hero-content text-center">
+            <div class="hero-big"><img src="assets/img/IoTHackathon.png" alt="Internet of Things World Forum Hosted by Cisco" width="400px" /></div>
+            <!--<div class="hero-normal">Hackathon</div>-->
+            <!--<a href="register.html" class="btn btn-lg btn-3d"><i class="fa fa-play-circle fa-2x"></i> <span>Register Now</span></a>-->
+            <br>
+            <div class="hero-normal">
+              <!--<hr />--><span><!--<span class="fa fa-calendar"></span>-->October 10 - 12 &nbsp;|&nbsp; <!--<span class="fa fa-map-marker">-->Chicago, Illinois</span><!--<hr />-->
+            </div>
+			       <a href="register.html" class="btn btn-sm btn-tertiary" target="_blank">Register Now</a>
+          </div>
+                    
+        </div>
+      </div>
+    </section> 
+    <!-- End Hero Section -->
+    
+    <!-- Header
+    <header id="header" class="navigation-bar-header light hidden-xs">
+      <div class="container">
+        <nav class="navigation">
+          <div class="navigation-txt visible-xs" data-toggle="dropdown">Home</div>
+          <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <ul class="navigation-bar navigation-bar-left">
+            <li><a href="#about">About</a></li>
+            <li><a href="#stat">Number Facts</a></li>s
+            <li><a href="#technology">Technology</a></li>
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#activities">Activities</a></li>
             <li><a href="#prizes">Prizes</a></li>
@@ -101,7 +139,7 @@
           </ul>
         </nav>
       </div>      
-    </header>
+    </header>-->
     <!-- End Header -->
     
     <!-- About Section -->
@@ -116,7 +154,7 @@
           <!-- Nav tabs -->
           <ul class="nav nav-tabs nav-justified">
             <li class="active"><a href="#htmlcss" data-toggle="tab"><i class="icon icon-chat-messages-01"></i> IoT World Forum</a></li>
-            <li><a href="#jquery" data-toggle="tab"><i class="icon icon-education-science-11"></i> Hacking With Us</a></li>
+            <li><a href="#jquery" data-toggle="tab"><i class="icon icon-education-science-11"></i> Hack With Us</a></li>
             <li><a href="#php" data-toggle="tab"><i class="icon icon-documents-bookmarks-12"></i> Things to Know</a></li>
           </ul>
           
@@ -125,14 +163,16 @@
             <div class="tab-pane fade in active" id="htmlcss">
               <article class="row">
                 <div class="col-md-5 col-sm-5 animated hiding" data-animation="fadeInLeft" data-delay="500">
-                  <br><img class="img-responsive" src="assets/img/transportation_small.jpg" alt="transportation" />
+                  <img class="img-responsive img-padding" src="assets/img/transportation_med2.jpg" alt="transportation" />
                 </div>
                 <div class="col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInRight" data-delay="500">
                   <h6>New Technologies. New Connections.</h6>
 					<!--<p class="big">Looking to break into the internet of things? Cisco has brought <a href="http://www.monkeybars.io">MonkeyBars</a> on board to help you do just that during a 24-hour build session at <a href="http://www.1871.com/">1871</a>. For this momentous occasion, Cisco is making available a few new development platforms and giving away cash money to the teams that create the most imaginative projects. Our favorite amenities, like ‘round the clock food and bev as well as some new hotness we’ve added for a bit of flavor will be presented this fall at the Internet of Things World Forum Hackathon hosted by Cisco.</p>-->
-          <p>The Internet of Things asserts the dawn of a new age where objects can communicate with other objects as well as their human counterparts. This advancement of connectivity is leading to both new understanding and great opportunities to create more effective tools and solve problems. The IoT World Forum is an exclusive congregation of the most influential minds in technology and engineering to achieve a greater collective understanding of IoT and foster collaboration.
+          <p>The <span class="highlight3">Internet of Things (IoT)</span> advances the age of connectivity, anticipating a world where objects communicate with other objects as well as their human counterparts. The IoT World Forum is an exclusive congregation of the most influential minds in technology and engineering, striving to acheive new understanding and follow opportunities to create more effective tools for new developments.
           <br><br>
-          Discussion can only go so far though - which is why we’re looking for passionate, creative minds to show what IoT is capable of. Get ready to break things and push IoT to the limits at IoT World Forum Hackathon.</p>
+          Discussion can only go so far though - which is why this hackathon is looking for passionate, creative minds to demonstrate the potential of IoT. This <span class="highlight3">exclusive, invite-only event</span> a week prior to the World Forum will allow attendees to sandbox projects using new IoT technologies, the best of which will be showcased at the World Forum by Cisco CTO Padmasree Warrior.
+          <br><br>
+          Get ready to break things and push IoT to the limits at IoT World Forum Hackathon.</p>
 					<!--<ul class="sub-list">
 						<li><i class="icon icon-documents-bookmarks-16"></i> Identify your skills</li>
 						<li><i class="icon icon-documents-bookmarks-11"></i> Bring a team</li>
@@ -165,12 +205,12 @@
                 </div>
                 <div class="col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInRight" data-delay="500">
                   <h6>Learn More.</h6>
-                  <p class>Please check out our <strong><a href="http://www.monkeybars.io/faq/">FAQ</a></strong> for questions about hackathons and/or Monkeybars.</p>
-                  <br>
+                  <p class>Please check out our <strong><a href="http://www.monkeybars.io/faq/" target="_blank" class="highlight3">FAQ</a></strong> for questions about hackathons and/or Monkeybars.</p>
 
-                  <p> We've organized this event with the explicit intention that it is a safe, positive, and inclusive space for all people. With this in mind we have published our <a href="MBCodeofConduct.pdf"><strong>Code of Conduct (pdf)</strong></a>, and expect all attendees to check it out and familiarize themselves with it.</p>
-                  <br>
-                  <p>Finally, learn more and get involved in the making of The Flock by contacting: <strong><a href="info@monkeybars.io">info@monkeybars.io</a></strong>.</p>
+                  <p> We've organized this event with the explicit intention that it is a safe, positive, and inclusive space for all people. With this in mind we have published our <a href="MBCodeofConduct.pdf" target="_blank" class="highlight3"><strong>Code of Conduct (pdf)</strong></a>, and expect all attendees to check it out and familiarize themselves with it.</p>
+
+                  <p>Finally, learn more about and get involved in the making of The Flock by contacting: <strong><a href="mailto:info@monkeybars.io?Subject=Flock%20Development%20Volunteer" class="highlight3">info@monkeybars.io</a></strong>, and join the conversation on Twitter with us at <span class="highlight3">#worldforum</span>.</p>
+                  <p></p>
                 </div>
               </article></div>
           </div>
@@ -221,8 +261,8 @@
     </section>
     End Metrics Section -->
 
-        <!-- Tech Resources Section -->
-    <section id="resources" class="section light">
+        <!-- Technology Section -->
+    <section id="technology" class="section light">
       <div class="overlay"></div>
       <div class="container">
         <div class="icon-wrap"><span class="icon icon-active icon-multimedia-12"></span></div>
@@ -239,7 +279,7 @@
               </div>
               <div class="name">Cisco Mobility eXperience</div>
               <div class="sub">(CMX)</div>
-              <p class="small">The <a href="https://developer.cisco.com/site/networking/mobility/cmx-mobility-services/downloads/">Cisco Mobility eXperience (CMX)</a> is a suite of apps that detect, connect, and engage with mobile devices operating in a WiFi field.</p>
+              <p class="small">The <a href="https://developer.cisco.com/site/networking/mobility/cmx-mobility-services/" target="_blank">Cisco Mobility eXperience (CMX)</a> is a suite of APIs that detect, connect, and engage with mobile devices operating in a WiFi field.</p>
               <!--<div class="social-link">
                 <a href="#"><span class="fa fa-facebook"></span></a>
                 <a href="#"><span class="fa fa-twitter"></span></a>
@@ -254,7 +294,7 @@
               </div>
               <div class="name">Data in Motion</div>
               <div class="sub">(DMo)</div>
-              <p class="small"><a href="https://developer.cisco.com/site/networking/internet-of-things/data-in-motion/data-in-motion/">Data in Motion (DMo)</a> interacts with sensors as to what data is of interest and what aspects of it to capture. DMo gives the ability to set rules and policies on edge devices along with capabilities to search the data in real-time and trigger subsequent context-aware actions</p>
+              <p class="small"><a href="https://developer.cisco.com/site/networking/internet-of-things/data-in-motion/data-in-motion/" target="_blank">Data in Motion (DMo)</a> interacts with sensors as to what data is of interest and what aspects of it to capture. DMo gives the ability to set rules and policies on edge devices along with capabilities to search the data in real-time and trigger subsequent context-aware actions</p>
               <!--<div class="social-link">
                 <a href="#"><span class="fa fa-facebook"></span></a>
                 <a href="#"><span class="fa fa-twitter"></span></a>
@@ -270,7 +310,7 @@
               </div>
               <div class="name">Cisco IOx</div>
               <div class="sub">&nbsp;</div>
-              <p class="small"><a href="https://developer.cisco.com/site/networking/internet-of-things/iox/iox/">Cisco IOx</a>, a hybrid between Cisco’s networking OS and Linux,  offers developers a way to create IoT applications such as data aggregation, control systems, and access control and have them run on edge network devices.</p>
+              <p class="small"><a href="https://developer.cisco.com/site/networking/internet-of-things/iox/iox/" target="_blank">Cisco IOx</a>, a hybrid between Cisco’s networking OS and Linux,  offers developers a way to create IoT applications such as data aggregation, control systems, and access control and have them run on edge network devices.</p>
               <!--<div class="social-link">
                 <a href="#"><span class="fa fa-facebook"></span></a>
                 <a href="#"><span class="fa fa-twitter"></span></a>
@@ -285,7 +325,7 @@
               </div>
               <div class="name">Cisco Physical Security</div>
               <div class="sub">&nbsp;</div>
-              <p class="small"><a href="https://developer.cisco.com/site/networking/security/physical-security/overview/">Cisco Physical Security</a> is a network of physical and digital surveillance tools including biometrics and forensic search.</p>
+              <p class="small"><a href="https://developer.cisco.com/site/networking/security/physical-security/overview/" target="_blank">Cisco Physical Security</a> is a network of physical and digital surveillance tools including biometrics and forensic search.</p>
               <!--<div class="social-link">
                 <a href="#"><span class="fa fa-facebook"></span></a>
                 <a href="#"><span class="fa fa-twitter"></span></a>
@@ -294,12 +334,12 @@
             </div>
           </div>
         </section>
-        <div class="btn-wrapper">
-          <a href="https://developer.cisco.com/site/devnet/home/index.gsp" class="btn btn-sm btn-tertiary">Learn more at Cisco's DevNet</a>
+        <div class="btn-tech">
+          <!--<a href="https://developer.cisco.com/site/devnet/home/index.gsp" class="btn btn-sm btn-tertiary"></a>-->Video Tutorials Coming Soon.
         </div>
       </div>
     </section>
-    <!-- End Tech Resources Section -->
+    <!-- End Technology Section -->
 
     <!-- Schedule Section -->
     <section id="schedule" class="section dark">
@@ -362,7 +402,7 @@
                         </div>
                         <div class="panel-heading">
                           <div class="panel-title">
-                            <div class="time"><i class="fa fa-clock-o"></i> 11:15 AM</div>
+                            <div class="time"><i class="fa fa-clock-o"></i> 6:15 PM</div>
                             <a data-toggle="collapse" data-parent="#panelTimelinePG" href="#pitemTwo" class="collapsed">
                               Remarks by Cisco and MonkeyBars
                               <div class="pull-right fa fa-angle-up"></div>
@@ -612,7 +652,7 @@
                         <div id="itemSeven" class="panel-collapse collapse" style="height: auto;">
                           <div class="panel-body">
                             <ul class="sub-list">
-                              <li><i class="icon icon-party-06"></i> Ease into the night with a relaxing yoga session and professional massages!/li>
+                              <li><i class="icon icon-party-06"></i> Ease into the night with a relaxing yoga session and professional massages!</li>
                             </ul>
                           </div>
                         </div>
@@ -790,22 +830,23 @@
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="speaker-item animated hiding" data-animation="fadeInUp" data-delay="0">
               <div class="img-wrapper">
-                <img src="assets/img/resources/ha-flock2.jpg" class="img-responsive img-circle" alt="speaker-1" />
+                <img src="assets/img/technology/ha-flock2.jpg" class="img-responsive img-circle" alt="speaker-1" />
               </div>
               <div class="name">Flock</div>
               <!--<div class="sub">[sub]</div>-->
               <p class="small">The Flock, a series of pieces conceptualized by mechanical artist Sebastian Morales, will transform 1871 into a wonderland of sorts for all those who love tech and art.</p>
-              <div class="social-link">
+              <a href="http://www.adorevolution.com/" target="_blank" class="highlight2">Sebastian's portfolio</a>
+              <!--<div class="social-link">
                 <a href="#"><span class="fa fa-facebook"></span></a>
                 <a href="#"><span class="fa fa-twitter"></span></a>
                 <a href="#"><span class="fa fa-google-plus"></span></a>
-              </div>
+              </div>-->
             </div>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="speaker-item animated hiding" data-animation="fadeInUp" data-delay="500">
               <div class="img-wrapper">
-                <img src="assets/img/resources/ha-yoga2.jpg" class="img-responsive img-circle" alt="speaker-2" />
+                <img src="assets/img/technology/ha-yoga2.jpg" class="img-responsive img-circle" alt="speaker-2" />
               </div>
               <div class="name">Yoga</div>
               <!--<div class="sub">CTO Pinterest</div>-->
@@ -821,7 +862,7 @@
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="speaker-item animated hiding" data-animation="fadeInUp" data-delay="1000">
               <div class="img-wrapper">
-                <img src="assets/img/resources/ha-massage2.jpg" class="img-responsive img-circle" alt="speaker-3" />
+                <img src="assets/img/technology/ha-massage2.jpg" class="img-responsive img-circle" alt="speaker-3" />
               </div>
               <div class="name">Massage</div>
               <!--<div class="sub">CEO Yahoo</div>-->
@@ -836,7 +877,7 @@
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="speaker-item animated hiding" data-animation="fadeInUp" data-delay="1500">
               <div class="img-wrapper">
-                <img src="assets/img/resources/ha-food2.jpg" class="img-responsive img-circle" alt="speaker-4" />
+                <img src="assets/img/technology/ha-food2.jpg" class="img-responsive img-circle" alt="speaker-4" />
               </div>
               <div class="name">24-hour feasting</div>
               <!--<div class="sub">God</div>-->
@@ -864,7 +905,7 @@
     <section class="vc-example">
       <article class="article-big">
         <h6><span class="highlight">Judging & Criteria:</span></h6>
-        <p class="big">How well can you blend the available tools? Would someone actually use your creation? How much does your product work at the end of 24 hours? These are the big questions that will decide who will be awarded the top prizes. But don't sweat it, between a hack night and a mob of mentors, you'll have all the support you need to make something you're proud to put your name on. </p>
+        <p class="big">How well can you blend the available tools? Would someone actually use your creation? How well does your product work at the end of 24 hours? These are the big questions that will decide who will be awarded the top prizes. But don't sweat it, between a hack night and a mob of mentors, you'll have all the support you need to make something you're proud to put your name on. </p>
       </article>
     </section>
     <br>
@@ -887,6 +928,7 @@
                   <h4 class="pricing-col-header-amount"><span class="pricing-col-amount">$3000</span></h4>
               </div>
               <div class="pricing-col-content">
+                  <p class="med">Grand Prize - your product<br>will be showcased by Cisco CTO<br>Padmasree Warrior.</p>
                   <a class="pricing-col-button" href="register.html">Register Now</a>
               </div>
           </div>
@@ -908,8 +950,8 @@
       <div class="overlay"></div>
       <div class="container">
         <article class="article-big animated hiding" data-animation="fadeInDown" data-delay="0">
-          <h5>Newsletter Signup</h5>
-          <p>Sign up to stay on top of hackathon-related<!--<span class="highlight"></span>--> updates!</p>
+          <h5>Get Hackathon <span class="highlight2">Updates</span>.</h5>
+          <p class="big">Sign up for email alerts here.</p>
           <form id="subscribe" class="form" action="<?=$_SERVER['PHP_SELF']; ?>" method="post">
             <div class="form-group form-inline">
               <input type="email" class="form-control required" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" /> 

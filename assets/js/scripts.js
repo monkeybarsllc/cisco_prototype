@@ -42,6 +42,12 @@
       }
     });
 
+
+    $(.navigation-bar).waypoint(function(direction) {
+    	if
+    	alert('Nav bar activated by scroll.');
+	});
+
     // scroll body to 0px on click
     app.el['back-to-top'].click(function () {
       app.el['html-body'].animate({
