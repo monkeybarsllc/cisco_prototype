@@ -169,6 +169,53 @@
 		map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 	}
 				
-	google.maps.event.addDomListener(window, 'load', initialize); 
+	google.maps.event.addDomListener(window, 'load', initialize);
 	
 })();
+
+var formApp = angular.module('HackathonReg', []);
+
+formApp.controller('RegFormCtrl', ['$http', '$scope', function ($http, $scope) {
+
+  $scope.registered = false;
+
+  $scope.newRegistration = {
+    event_id: 1,
+    responses: [
+      {
+        question_id: 2
+      },
+      {
+        question_id: 3
+      }
+    ]
+  };
+
+  $scope.submitRegistration = function() {
+    $http(
+      {
+        method: 'POST',
+        url: 'http://projecthacktool.com/api/events/register',
+        headers: {
+          'Authorization': 'Token token=4090ec6c153d8c9ba06ad2c1719040b1'
+        },
+        data: $scope.newRegistration
+      }
+    ).success(
+      $scope.registered = true,
+      $scope.newRegistration = {
+        event_id: 1,
+        responses: [
+          {
+            question_id: 2
+          },
+          {
+            question_id: 3
+          }
+        ]
+      }
+    )
+  };
+
+
+}]);
