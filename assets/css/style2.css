@@ -310,7 +310,7 @@ p a {color:#ffc845; font-weight: bold;}
 .nav-tabs-simple .nav-tabs { position: relative; top:-30px; margin-bottom: 20px; }
 .nav-tabs-simple .tab-content { position: relative; margin-top: -10px; padding-bottom: 10px; }
 .nav-tabs-simple .nav-tabs li { border-bottom:1px solid #cecece; padding-bottom: 40px; text-align: center; }
-.nav-tabs-simple .nav-tabs li a { border: 1px solid transparent; font-size: 20px; color: #000; }
+.nav-tabs-simple .nav-tabs li a { border: 1px solid transparent; font-size: 18px; color: #000; }
 .nav-tabs-simple .nav-tabs li a:Hover { background: none; color: #cc3727; }
 .nav-tabs-simple .nav-tabs li.active a { color: #cc3727; }
 .nav-tabs-simple .nav-tabs li.active { position: relative; z-index: 1; }
@@ -339,7 +339,7 @@ p a {color:#ffc845; font-weight: bold;}
   font-size: 40px;
   border: 1px solid #333;
   padding: 13px 18px 10px;
-  border-radius: 70px;
+  border-radius: 65px;
   position: relative;
   top: 27px;
   margin-right: 7px;
