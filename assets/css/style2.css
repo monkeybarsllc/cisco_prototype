@@ -112,7 +112,7 @@ p a {color:#ffc845; font-weight: bold;}
 .hero-content > .btn-default:Hover {background:#ffc845; border-color:#ffc845;}
 
 .btn-lg { font-size: 35px; padding:21px 55px; }
-.btn-sm { font-size: 20px; padding:17px 43px; }
+.btn-sm { font-size: 1.5em; padding:17px 43px; }
 .btn-xs { font-size: 18px; padding:13px 35px; }
 .btn-3d { padding-left: 15px; padding-right: 30px; font-size: 22px; padding-top: 9px; padding-bottom: 9px; }
 
@@ -142,12 +142,13 @@ p a {color:#ffc845; font-weight: bold;}
 /* Content */
 #hero { background: url('../img/header-bg3.png') top center no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; min-height: 500px; position: relative; overflow:hidden;}
 #hero .container { position: static;}
-#hero .hero-content { position: absolute; top: 42%; left: 0; right: 0; margin-top: -195px; background: url('../img/transpbg3.png'); padding: 20px 0;}
+#hero .hero-content { position: absolute; top: 42%; left: 0; right: 0; margin-top: -105px; background: url('../img/transpbg3.png'); padding: 20px 0;}
 
+#hero .hero-content img { width:25%; }
 
 #hero hr { width: 5%; border: 0; border-top: 1px solid #FFF; display: inline-block; }
 #hero .hero-small {background: url('../img/transpbg4.png');}
-#hero .hero-small span  { font-family:'Roboto Regular', serif; font-size: 12                                                pt; /*display: inline-block; margin: 0 80px 3px; position: relative;*/ }
+#hero .hero-small span  { font-family:'Roboto Regular', serif; font-size: 12pt; /*display: inline-block; margin: 0 80px 3px; position: relative;*/ }
 #hero .hero-small .sep  { width: 30px; display: inline-block; }
 #hero .hero-small span.fa  { margin: 0px 10px 0px 0px; font-size:12pt; top: -3px; }
 #hero .hero-big  { font-size: 100pt; text-transform: uppercase; line-height: 100px; margin-bottom: 0px;}
@@ -743,9 +744,11 @@ label.error { display: block; }
   #hero .hero-small span { margin: 0 !important; }
   #hero > .navigation-social { margin-bottom:40px;}
   .navigation-social li a { padding-left: 12px; padding-right: 12px; }
-  #hero .hero-content { top: 57%; margin-top:40px; }
-  #hero .hero-big { font-size: 50px !important; line-height: 70px; margin-top: 10px; }
-  #hero .hero-normal { font-size: 38pt; margin: 0px 0px 20px 0px; }
+
+  #hero .hero-content { top: 35%; margin-top:40px; }
+  #hero .hero-content img { width:60%; }
+  #hero .hero-big { font-size: 1.5em !important; line-height: 1.0em; margin-top: 10px; }
+  #hero .hero-normal { font-size: 1.5em; margin: 0px 0px 20px 0px; }
   .navigation-social li {padding-top: 40px;}
   .pricing-col { width: 100% !important; }
   .nav-tabs-simple .nav-tabs li a { font-size: 20px; padding: 0; }
@@ -780,12 +783,15 @@ label.error { display: block; }
   margin-top: 0px;
   margin-bottom: 30px;
   }
-  
+  #hero .hero-content {margin-top: -20%; }
+  #hero .hero-content img { width:45%; } 
+  #hero .hero-normal { font-size: 1.0em; }
+
   .nav-tabs-simple { margin-top:25px; }
   #subscribe .btn {margin-top:25px;}
   #elements .btn {margin-top:10px;}
   .navigation.open a {z-index:1000; position:relative; display:block;}
-  #hero .hero-normal {font-size: 38pt; margin: 0px 0px 20px 0px;}
+  #hero .hero-normal {font-size: 1.0em; margin: 0px 0px 20px 0px;}
   #hero hr {margin-top: 5px; margin-bottom: 5px;}
   .navigation-social li {padding-top: 40px;}
   .nav-tabs-simple .nav-tabs .icon { display: none; }
@@ -830,14 +836,25 @@ label.error { display: block; }
 @media (max-width: 991px) and (min-width: 768px) {
   .nav-tabs-default .tab-pane .nav-tabs > li > a { padding-left: 20px; padding-right: 20px; }
   .nav-tabs-default .tab-pane .nav-tabs.nav-justified > li > a { padding-left: 5px; padding-right: 5px; }
-  
+  #hero .hero-content { top:20px; margin-top:15%; }
+  #hero .hero-content img { width:35%; } 
+  #hero .hero-normal { font-size: 1.2em; }
   #hero .hero-big { font-size: 130px; }
   .navigation-bar-header .navigation-bar > li a { padding-left: 5px; padding-right: 5px; font-size: 16px; }
 }
 
-/* Desktop small screen */
+/* Desktop small screen 
 @media (min-width: 992px) {
-  
+  #hero .hero-content img { width:38%; } 
+  #hero .hero-normal { font-size: 1.3em; }
+}*/
+
+
+/* Desktop mid screen */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #hero .hero-content { top:20px; margin-top:15%; }
+  #hero .hero-content img { width:38%; } 
+  #hero .hero-normal { font-size: 1.3em; }
 }
 
 /* Desktop large screen */
@@ -845,4 +862,6 @@ label.error { display: block; }
   .container {
     width: 970px;
   }
+  #hero .hero-content img { width:30%; } 
+  #hero .hero-normal { font-size: 1.2em; }
 }
