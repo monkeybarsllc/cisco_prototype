@@ -407,7 +407,7 @@ p a {color:#ffc845; font-weight: bold;}
   
 /* START registration form */
 .register-page #hero  { overflow-y:scroll; }
-.register-page #hero .hero-content { top: 25%; }
+/*.register-page #hero .hero-content { top: 25%; }*/
 
 .form-control {-webkit-border-radius: 1px;-moz-border-radius: 1px;border-radius: 1px;}
 .form-control {height: 44px; }
@@ -865,4 +865,5 @@ label.error { display: block; }
   #hero .hero-content { top:20px; margin-top:10%; }
   #hero .hero-content img { width:30%; } 
   #hero .hero-normal { font-size: 1.2em; }
+  .register-page #hero .hero-content { top:20px; margin-top:0%; }
 }
