@@ -852,7 +852,7 @@ label.error { display: block; }
 
 /* Desktop mid screen */
 @media (min-width: 992px) and (max-width: 1199px) {
-  #hero .hero-content { top:20px; margin-top:15%; }
+  #hero .hero-content { top:20px; margin-top:10%; }
   #hero .hero-content img { width:38%; } 
   #hero .hero-normal { font-size: 1.3em; }
 }
@@ -862,6 +862,7 @@ label.error { display: block; }
   .container {
     width: 970px;
   }
+  #hero .hero-content { top:20px; margin-top:10%; }
   #hero .hero-content img { width:30%; } 
   #hero .hero-normal { font-size: 1.2em; }
 }
