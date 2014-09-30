@@ -99,7 +99,7 @@ p a {color:#ffc845; font-weight: bold;}
 
 /*Remove once link is delivered:*/
 .btn-tech { border: 2px solid #ddd; border-radius: 0; opacity: 1; background: #fff; color: #0e3868; font-family: 'Ubuntu', sans-serif ; font-size: 20px; padding:17px 43px; display: inline-block; }
-
+ 
 .btn-default { opacity: 1; background: transparent; }
 .btn-default:Hover { background: #cc3727; color: #fff; border-color:#cc3727; }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default { background: #cc3727; color: #fff; border-color:#cc3727; }
@@ -118,6 +118,9 @@ p a {color:#ffc845; font-weight: bold;}
 
 .light .btn { color: #0e3868; font-weight: 300; }
 
+#gordon {background: url('../img/gm.png'); height:100px; width:120px; opacity:0.5; position:fixed; top:0; z-index: 100;}
+.sticky-wrapper-g {}
+#gordon.sticky { position: fixed; top:0; display: block; width: 120px; z-index: 16; opacity:1;}
 
 
 .icon { display: inline-block; background-repeat: no-repeat; overflow: hidden; }
