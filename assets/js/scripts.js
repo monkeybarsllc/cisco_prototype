@@ -95,7 +95,12 @@
     $('#header').waypoint('sticky', {
         wrapper: '<div class="sticky-wrapper" />',
         stuckClass: 'sticky'
-    }); 
+    });
+
+    $('#gordon').waypoint('sticky', {
+        wrapper: '<div class="sticky-wrapper-g" />',
+        stuckClass: 'sticky'
+    });  
 
     $('.fancybox').fancybox();
     
@@ -196,7 +201,7 @@ formApp.controller('RegFormCtrl', ['$http', '$scope', function ($http, $scope) {
         data: $scope.newRegistration
       }
     ).success(
-      $scope.registered = true,
+      $scope.ergistered = true,
       $scope.newRegistration = {
         event_id: 1,
         responses: [
