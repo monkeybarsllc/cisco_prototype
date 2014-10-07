@@ -167,6 +167,8 @@ p a {color:#ffc845; font-weight: bold;}
   z-index: -1000; 
   overflow: hidden;}
 
+.sitepreview { display:none; }
+
 .navigation-bar-header { background: rgba(14, 56, 104, 0.9); position: relative; z-index: 1; }
 .navigation-bar-header.sticky { position: fixed; top:0; display: block; width: 100%; z-index: 9; }
 .sticky-wrapper { margin-top: 0px; height: 90px; }
