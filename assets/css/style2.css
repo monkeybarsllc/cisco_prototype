@@ -27,6 +27,7 @@ strong { font-family: 'Roboto Regular', sans-serif; font-weight: 400; font-style
 .hero-big { font-family: 'Ubuntu', sans-serif; }
 .hero-normal { font-size: 1.5em; letter-spacing:0.2em; font-family: 'Ubuntu Light', sans-serif; text-transform: uppercase; }
 .hero-small {font-family: 'Ubuntu', sans-serif;}
+.hero-normal-info{width:37%; margin:auto;}
 
 /* Global & Helper */
 
@@ -49,6 +50,8 @@ h7, .h7, h8, .h8 { margin-top: 0; margin-bottom: 5px; }
 a { color: #cc3727; text-decoration: none; }
 a:hover, a:active, a:focus { color: #cc3727; text-decoration: underline; outline: none; }
 a.map {font-family: 'Roboto Regular', serif; }
+
+a.hash {color:#ffc845; font-weight: bold;}
 
 ::selection { background-color: #FF714A; color: #fff; }
 
