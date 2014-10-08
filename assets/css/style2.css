@@ -27,7 +27,7 @@ strong { font-family: 'Roboto Regular', sans-serif; font-weight: 400; font-style
 .hero-big { font-family: 'Ubuntu', sans-serif; }
 .hero-normal { font-size: 1.5em; letter-spacing:0.2em; font-family: 'Ubuntu Light', sans-serif; text-transform: uppercase; }
 .hero-small {font-family: 'Ubuntu', sans-serif;}
-.hero-normal-info{width:37%; margin:auto;}
+.hero-normal-info{width:40%; margin:auto;}
 
 /* Global & Helper */
 
