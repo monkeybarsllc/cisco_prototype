@@ -201,7 +201,7 @@ formApp.controller('RegFormCtrl', ['$http', '$scope', function ($http, $scope) {
         data: $scope.newRegistration
       }
     ).success(
-      $scope.ergistered = true,
+      $scope.registered = true,
       $scope.newRegistration = {
         event_id: 1,
         responses: [
