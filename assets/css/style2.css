@@ -27,7 +27,7 @@ strong { font-family: 'Roboto Regular', sans-serif; font-weight: 400; font-style
 .hero-big { font-family: 'Ubuntu', sans-serif; }
 .hero-normal { font-size: 1.5em; letter-spacing:0.2em; font-family: 'Ubuntu Light', sans-serif; text-transform: uppercase; }
 .hero-small {font-family: 'Ubuntu', sans-serif;}
-.hero-normal-info{width:40%; margin:auto;}
+.hero-normal-info{font-size:1.0em; width:40%; margin:auto;}
 
 /* Global & Helper */
 
@@ -863,6 +863,7 @@ label.error { display: block; }
   #hero .hero-content { top:20px; margin-top:10%; }
   #hero .hero-content img { width:38%; } 
   #hero .hero-normal { font-size: 1.3em; }
+  .hero-normal-info {font-size:0.9em; width:60%;}
 }
 
 /* Desktop large screen */
@@ -873,5 +874,6 @@ label.error { display: block; }
   #hero .hero-content { top:20px; margin-top:10%; }
   #hero .hero-content img { width:30%; } 
   #hero .hero-normal { font-size: 1.2em; }
+  #hero .hero-normal-info {font-size:0.9em; width:60%;}
   .register-page #hero .hero-content { top:20px; margin-top:0%; }
 }
