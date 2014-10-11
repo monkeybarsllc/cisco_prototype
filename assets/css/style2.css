@@ -241,7 +241,7 @@ p a {color:#ffc845; font-weight: bold;}
   background: #fff; }
 .navigation-toggle .icon-bar+.icon-bar { margin-top: 4px; }
 
-#stat, #newsletter , #register, #activities, #technology { background: url('../img/stat-bg2.png') center bottom no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#stat, #newsletter , #register, #activities, #technology, #judges { background: url('../img/stat-bg2.png') center bottom no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 #stat .stat-info { font-size: 17pt; }
 #stat .stat { font-family: 'Roboto Light', sans-serif; font-size: 100px; color: #cc3727; }
@@ -570,6 +570,25 @@ label.error { display: block; }
   height: 31px;
   font-size: 18px; }
 #activities .social-link a:Hover { opacity: 1; color:#ffc845; border-color:#cc3727; }
+
+
+#judges .speaker-item { padding-bottom: 50px; }
+#judges .img-wrapper { text-align: center; }
+#judges .img-wrapper img { margin: 0 auto; }
+#judges .name { font-size: 25px; margin: 10px 0 2px; }
+#judges .sub { font-size: 18px; color: #ffc845; margin: 0 0 15px; }
+#judges p { padding: 0 20px; margin-bottom: 15px; opacity: 0.8; }
+#judges .social-link a { 
+  opacity: 1.0;
+  color: #fff;
+  padding: 2px 5px;
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  font-size: 18px; }
+#judges .social-link a:Hover { opacity: 1; color:#ffc845; border-color:#cc3727; }
+
+#judges .judgeline2{display: block;}
 
 
 .pricing-cols { margin-top: 30px; width: 100%; display: inline-block; border-collapse: collapse; margin-bottom: -20px; }

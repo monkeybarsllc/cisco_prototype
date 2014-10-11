@@ -1040,27 +1040,118 @@
       </div>
     </section>
     <!-- End Prizes Section -->
-  <!-- Newsletter Section -->
-    <section id="newsletter" class="section light">
+
+
+        <!-- Judges Section -->
+    <section id="judges" class="section light">
       <div class="overlay"></div>
       <div class="container">
-        <article class="article-big animated hiding" data-animation="fadeInDown" data-delay="0">
-          <h5>Get IoTWF Hackathon <span class="highlight2">Updates</span>.</h5>
-          <p class="big">Sign up for email alerts here.</p>
-          <form id="subscribe" class="form" action="<?=$_SERVER['PHP_SELF']; ?>" method="post">
-            <div class="form-group form-inline">
-              <input type="email" class="form-control required" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" /> 
-        <input type="submit" class="btn btn-xs btn-tertiary" value="Submit" />
-        <span id="response">
-        <? require_once('assets/mailchimp/inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?>
-        </span>
+          <div class="icon-wrap"><span class="icon icon-active icon-multimedia-12"></span></div>
+          <h3>Our Amazing Judges</h3>
+          <div class="sub-title">Know who's judging you!</div>
+          <br />
+          <br />
+          <br />
+          
+          <!--Judges ROW 1 -->
+          <section class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <section class="row">
+                <div class="col-md-4 col-sm-3 col-xs-6">
+                  <div class="speaker-item animated hiding" data-animation="fadeInUp" data-delay="0">
+                    <div class="img-wrapper">
+                      <img src="assets/img/speaker/carmen.jpg" class="img-responsive img-circle" alt="speaker-1" />
+                    </div>
+                    <div class="name">Carmen McDonald</div>
+                    <div class="sub">UX/UI Designer</div>
+                    <div class="sub">Zebra Technologies</div>
+                    <p class="small">Carmen works at Zebra as a UI/UX Designer working on several IoT projects. She also does design consulting, teaches media and design at the graduate level and does Swing and Line Dance.</p>
+                    <!--<div class="social-link">
+                      <a href="#"><span class="fa fa-facebook"></span></a>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-google-plus"></span></a>
+                    </div>-->
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-3 col-xs-6">
+                  <div class="speaker-item animated hiding" data-animation="fadeInUp" data-delay="500">
+                    <div class="img-wrapper">
+                      <img src="assets/img/speaker/christina.jpg" class="img-responsive img-circle" alt="speaker-2" />
+                    </div>
+                    <div class="name">Christina Pei</div>
+                    <div class="sub">Co-Founder & Exec. Producer</div>
+                    <div class="sub">Mini Maker Faire North</div>
+                    <p class="small">Christina Pei is the co-founder & executive producer of Chicago Northside Mini Maker Faire, director of education outreach at the University of Chicago, and a lock picker extraordinaire.</p>
+                    <!--<div class="social-link">
+                      <a href="#"><span class="fa fa-facebook"></span></a>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-google-plus"></span></a>
+                    </div>-->
+                  </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-md-4 col-sm-3 col-xs-6">
+                  <div class="speaker-item animated hiding" data-animation="fadeInUp" data-delay="1000">
+                    <div class="img-wrapper">
+                      <img src="assets/img/speaker/emile.jpg" class="img-responsive img-circle" alt="speaker-3" />
+                    </div>
+                    <div class="name">Emile Cambry</div>
+                    <div class="sub">Co-Founder</div>
+                    <div class="sub">Blue 1647</div>
+                    <p class="small">Emile Cambry, Jr. is a business professor, filmmaker, and social entrepreneur in Chicago.  Life plan = loop { educate_many(); have_fun(); }</p>
+                    <!--<div class="social-link">
+                      <a href="#"><span class="fa fa-facebook"></span></a>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-google-plus"></span></a>
+                    </div>-->
+                  </div>
+                </div>
+              </section>
             </div>
-           
-          </form>
-        </article>
+          </section>
+          <!--END Judges ROW 1 -->
+
+          <!--END Judges ROW 2 -->
+          <section class="row">
+            <div class="col-md-3 col-md-offset-3 vcol-sm-3 col-xs-6">
+              <div class="speaker-item animated hiding" data-animation="fadeInUp" data-delay="1500">
+                <div class="img-wrapper">
+                  <img src="assets/img/speaker/jerry.jpg" class="img-responsive img-circle" alt="speaker-4" />
+                </div>
+                <div class="name">Jerry Rocco</div>
+                <div class="sub">Public Sector Liaison</div>
+                <div class="sub">Cisco</div>
+                <p class="small">Jerry is currently at Cisco and frequently invites CPS students to visit the Cisco office to connect over HD video to students and programs all over the US.</p>
+                <!--<div class="social-link">
+                  <a href="#"><span class="fa fa-facebook"></span></a>
+                  <a href="#"><span class="fa fa-twitter"></span></a>
+                  <a href="#"><span class="fa fa-google-plus"></span></a>
+                </div>-->
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="speaker-item animated hiding" data-animation="fadeInUp" data-delay="1500">
+                <div class="img-wrapper">
+                  <img src="assets/img/speaker/simon.jpg" class="img-responsive img-circle" alt="speaker-4" />
+                </div>
+                <div class="name">Simon Lemay</div>
+                <div class="sub">Technical Lead</div>
+                <div class="sub">Zebra Technologies</div>
+                <p class="small">Jerry is currently at Cisco and frequently invites CPS students to visit the Cisco office to connect over HD video to students and programs all over the US.</p>
+                <!--<div class="social-link">
+                  <a href="#"><span class="fa fa-facebook"></span></a>
+                  <a href="#"><span class="fa fa-twitter"></span></a>
+                  <a href="#"><span class="fa fa-google-plus"></span></a>
+                </div>-->
+              </div>
+            </div>
+          </section>
+          <!--END Judges ROW 2 -->
+
       </div>
+
     </section>
-    <!-- End Newsletter Section -->
+    <!-- End Judges Section -->
   
 
     <!-- Elements Section<section id="elements" class="section dark">
@@ -1219,6 +1310,29 @@
     </div>
     </section>
     <!-- End Map Section -->
+
+  <!-- Newsletter Section -->
+    <section id="newsletter" class="section light">
+      <div class="overlay"></div>
+      <div class="container">
+        <article class="article-big animated hiding" data-animation="fadeInDown" data-delay="0">
+          <h5>Get IoTWF Hackathon <span class="highlight2">Updates</span>.</h5>
+          <p class="big">Sign up for email alerts here.</p>
+          <form id="subscribe" class="form" action="<?=$_SERVER['PHP_SELF']; ?>" method="post">
+            <div class="form-group form-inline">
+              <input type="email" class="form-control required" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" /> 
+        <input type="submit" class="btn btn-xs btn-tertiary" value="Submit" />
+        <span id="response">
+        <? require_once('assets/mailchimp/inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?>
+        </span>
+            </div>
+           
+          </form>
+        </article>
+      </div>
+    </section>
+    <!-- End Newsletter Section -->
+
     <footer id="footer">
 
     </footer>
