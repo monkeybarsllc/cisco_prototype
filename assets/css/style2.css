@@ -97,6 +97,9 @@ p a {color:#ffc845; font-weight: bold;}
 .btn-tertiary { opacity: 1; background: #ffc845; }
 .btn-tertiary:Hover { background: #fff; color: #cc3727 !important; border-color:#fff; }
 
+.btn-sponsors { opacity: 1; background: #ffc845; }
+.btn-sponsors:Hover { background: #0e3868; color: #ffc845 !important; border-color:#fff; }
+
 .btn-hero { opacity: 1; background-color: #881c56; color:#ffc845  !important; font-family:'Roboto Light', sans-serif; font-size: 22px; padding:17px 43px; }
 .btn-hero:Hover {background-color: #fff; color:#881c56 !important; border:1px solid #881c56;}
 
